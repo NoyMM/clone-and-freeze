@@ -7,9 +7,3 @@ function cloneAndFreeze(obj) {
 }
 
 module.exports.cloneAndFreeze = cloneAndFreeze;
-
-
-obj = {"name": "Noy"};
-copyObj = cloneAndFreeze(obj);
-copyObj.name = "Guy";
-console.log(obj.name, copyObj.name);
